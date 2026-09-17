@@ -1,0 +1,56 @@
+# vsim -c work.Top_Module_tb -do "do Top_Module.do; run -all" 
+# Start time: 18:24:47 on Sep 17,2026
+# Loading sv_std.std
+# Loading work.Top_Module_tb
+# Loading work.Top_Module
+# Loading work.apb_i2c_regs
+# Loading work.i2c_slave
+# Loading work.i2c_master
+# do Top_Module.do
+# delete wave not supported in batch mode
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# wave zoomfull not supported in batch mode
+#  run -all
+# ==========================================
+# APB-I2C VERIFICATION START
+# ==========================================
+# PASS: RESET: STATUS busy/done/ack_error/bus_error/bus_busy all clear
+# PASS: RESET: VERSION register reads expected constant
+# PASS: RESET: SDA and SCL released (bus idle high)
+# PASS: WRITE 0xA5: no ACK error reported
+# PASS: WRITE 0xA5: slave received correct data byte
+# PASS: READ 0xA5: no ACK error reported
+# PASS: READ 0xA5: master RX_DATA matches expected byte
+# PASS: MULTIPLE WRITE: no ACK error
+# PASS: MULTIPLE WRITE: slave data matches written value
+# PASS: MULTIPLE WRITE: no ACK error
+# PASS: MULTIPLE WRITE: slave data matches written value
+# PASS: MULTIPLE WRITE: no ACK error
+# PASS: MULTIPLE WRITE: slave data matches written value
+# PASS: MULTIPLE WRITE: no ACK error
+# PASS: MULTIPLE WRITE: slave data matches written value
+# PASS: MULTIPLE READ: no ACK error
+# PASS: MULTIPLE READ: master RX_DATA matches expected byte
+# PASS: MULTIPLE READ: no ACK error
+# PASS: MULTIPLE READ: master RX_DATA matches expected byte
+# PASS: MULTIPLE READ: no ACK error
+# PASS: MULTIPLE READ: master RX_DATA matches expected byte
+# PASS: MULTIPLE READ: no ACK error
+# PASS: MULTIPLE READ: master RX_DATA matches expected byte
+# PASS: Invalid ADDRESS: ACK_ERROR asserted (slave did not ACK)
+# PASS: Invalid ADDRESS: bus returns to idle (BUSY=0)
+# PASS: RANDOM: 10 write/read pairs all matched
+# PASS: INVALID ADDRESS: PSLVERR asserted
+# ==========================================
+# TOTAL TESTS : 27
+# PASSED      : 27
+# FAILED      : 0
+# ==========================================
+# ** Note: $finish    : TopModule_tb.sv(343)
+#    Time: 6110291 ns  Iteration: 0  Instance: /Top_Module_tb
+# End time: 18:24:49 on Sep 17,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
